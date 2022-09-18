@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Multimedia con HTML
+        </title>
+    </head>
+    <body>
+        <!--Atributos mas importantes:
+            Src= atributo de imagen que me dice la imagen a mostrar
+            alt= alternativa a la imagen, se usa en caso de no poder renderizar la imagen
+        Otros atributos importantes
+            width= ancho de imagen,
+            legth= alto de imagen, en propiedades del archivo podemos ver el tamaño de la misma-->
+        <h3>Imagenes</h3>
+        <img src="/Teoria/Multimedia/logoAcademia.jpg" alt="Logo de Academia" width="250" height="250"/>
+        <!--Solo tiene una etiqueta de apertura-->
+        <h3>Video</h3>
+        <!--Tipos de videos mas utilizados:
+            webm
+            mp4
+            ogg-->
+        
+        <video width="300" height="300"><!--Tiene etiqueta de apertura y cierre a diferencia de las imagenes-->
+            <source src="nombredelvideo.mp4" type="video/mp4" controls autoplay muted loop> <!--Para que se muestre el video-->
+        </video>
+        <!--Atributos de video
+            width, height
+            autoplay = para que automaticamente se reproduce la etiqueta de video.
+            controls = controles de play, adelante, atras...
+            muted = sin sonido, con los controles te da opcion a ponerle el sonido.
+            loop = bucle, continuamente reproduciendose.
+        -->
+
+        <h3>
+            Audio
+        </h3>
+        <  autoplay controls>
+            <source src="" type="audio/mp3"/>
+        </audio>
+        <!--Tipos de audios:
+            mp3
+            wav
+            ogg
+        Atributos:
+            source: raiz de donde saca el audio
+            controls: Controles del audio
+        Tanto de los videos como de los audios nos podemos alimentar de fuentes externas
+        metiendo la url donde este el recurso.
+        -->
+        
+
+
+    </body>
+</html>
