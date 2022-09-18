@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <!--Formulario=Agrupa elementos para que el usuario pueda introducir sus datos.-->
+        <form action="Vresultado.html" method="GET">
+            <!--el action te envia los datos del formulario a la direccion que le pones en el action-->
+            <!--El method es la manera en que envia los datos-->
+            <div><!--Dentro de los divs se engloban los input con su correspondiente label-->
+            <label for="nombreusuario" >Nombre de usuario</label> 
+            <input type="text"  name="nombreusuario" id="nombreusuario" required/> <!--Con los atributos for e id relaciono el label con el input
+                Con el name="" lo que hago es relacionar el campo en la pagina a la que envia el dato del mismo.
+                Con required estan obligando a que rellene el campo del formulario
+                Type = tipo de campo que es el que estoy rellenando-->
+            </div>
+            <br>
+            <div>
+            <label  for="password" >Password</label> 
+            <input type="password" name="password"id="password" required/> <!--Con los atributos for e id relaciono el label con el input-->    
+            </div>
+            <br>
+            <div>
+                <label  for="edad" >Edad</label> 
+                <input type="number" name="edad"id="edad" min="0" max="100" step="5"/> 
+                <!--step= en vez de subir de 1 en 1 sube de 5 en 5 en este caso o el valor que le indique.-->   
+            </div>
+            <br>
+            <div>
+                <label  for="nacimiento" >Fecha nacimiento</label> 
+                <input type="date" name="nacimiento" id="nacimiento" /> <!--Con los atributos for e id relaciono el label con el input-->    
+            </div>
+            <br>
+
+            <div>
+                <label  for="email" >Email</label> 
+                <input type="email" name="email" id="email" required/> <!--Con los atributos for e id relaciono el label con el input-->    
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="comentarios"></textarea>
+            </div>
+            <br>
+            <a href="VEtiquetasParaFormularios.html">Volver al Formulario</a><!--Enlace para volver-->
+
+            <!--<button>Enviar</button> --Boton por defecto-->
+
+            <!--Tipo de botones-->
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetea el formulario</button>
+
+
+        </form>
+    </body>
+</html>
