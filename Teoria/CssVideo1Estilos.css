@@ -1,0 +1,47 @@
+h1 {
+    color:brown;
+}
+
+/*Forma de hacer comentarios en CSS*/
+p{
+    color:blueviolet; /*Propiedad -- clave:valor;*/
+    font-size: 16pt;
+    color: blue; /*se veria este estilo porque es el ultimo
+    sobre la web en estilos se veria tachado para el color anterior.*/
+
+}
+
+/*Acceso a los selectores de id*/
+#primer-parrafo{
+    color:grey;
+    font-size:12pt;
+}
+
+#segundo-parrafo{
+    color:blue
+}
+
+span#primer-parrafo{
+
+    color:aquamarine;/*Solo los parrafos con el id....Asi aunque tenga el mismo id,
+    solo para los span con ese id me cambia a este estilo*/
+
+}
+
+.encabezado{
+    color:pink; /*Estoy usando un estilo de clase para diferenciar dos lineas de texto con
+    la misma etiqueta*/
+}
+
+/*Selector universal.Sirve para todos los elementos
+*{
+    
+    
+}*/
+/* Para poner una condicion *.encabezado, le estoy diciendo
+que para todos los que tengan class=encabezado me ponga ese estilo*/
+
+/*Para dar un stilo a mas de una clase, etiqeta o id*/
+.autor, .fecha, .ubicacion, h1, #segunda-noticia{
+    text-decoration: underline;
+}

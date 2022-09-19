@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap');
+/*de esta manera
+me ahorro meter en el head los estilos y tambien copiar el font-family de googlefonts*/
+
+html{ /*estilo para todo el html*/
+/*font-family: 'Oswald', sans-serif; /*familia de fuentes*/
+font-size: larger /*se puede trabajar con pixeles, puntos, y definidos como large, larger....*/;
+font-weight: 500;/*peso de la fuente, depende de la fuente te afecta mas o menos al peso de la misma*/
+/*Para importar fuentes desde googlefonts no es recomendable
+bajarse todos los estilos xq puede relentizar mucho el proyecto.*/
+
+
+
+}

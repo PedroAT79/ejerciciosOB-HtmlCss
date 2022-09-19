@@ -1,0 +1,54 @@
+/*Estilos para colores:*/
+/*Herramiento para colores y paletas de colores: coolors.co*/
+.colores{
+    color:red;
+}
+
+.color-hexadecimal{
+    color: #BCE784;
+}
+
+.color-rgb{
+    color:rgb(100,0,200);
+}
+.color-rgbA{
+    color: rgba(10,15,0.35);
+}
+
+.fondo{
+    /*background-color: aqua;*/
+    /*Definir imagen de fondo, se coloca por defecto de arriba a la izquierda */
+    background-image: url("https://printablegraphics.in/wp-content/uploads/2018/01/Abstract-Html-background-image.jpg") ;
+    background-position: center center; /*Para centrar la imagen del fondo (x,y)*/
+}
+
+.fondo-interno{
+    background-image: url("Teoria/Multimedia/th.jpg");
+    background-position: left bottom;
+}
+
+.ancho{
+    background-color: rgb(79, 79, 128);
+    width: 100px ;
+}
+
+.alto{
+    background-color: aquamarine;
+    height: 200px;
+    
+}
+/*Ojo al trabajar con pixeles porque hoyen dia todo debe ser responsive*/
+
+.tarjeta{
+    border-style: solid; /*borde solido*/
+    border-color:blueviolet;
+    border-width: 5px;
+    /*border-top: none; para quitar el borde de arriba*/
+
+    padding: 10px 20px; /*30px 40px; /*Espacio desde los bordes al contenido*/
+    /*Arriba - derecha - abajo - izquierda, si solo pongo dos es arriba-abajo y a los lados*/
+    /*margin es el espacio con respecto a otros elementos*/
+
+    margin: 50px 30px; /*igual que el padding*/
+}
+
