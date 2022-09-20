@@ -1,0 +1,16 @@
+.contenedor{
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    overflow: auto;/*me ajusta lo que tengo dentro del contenedor dependiendo el valor de
+    la propiedad, 
+    -"hidden" oculta todo lo que sobresalga y no hay manera de verlo,
+    -"scroll" me oculta lo que sale del contenedor pero me pone una barra para poder
+    ver lo que esta oculto,
+    -"visible" seria por defecto, si se sale el texto seguiria igual.
+    -"auto" me optimiza para el viewport (pantalla) en el que estamos
+    - usando "overflow-x y overflow-y le puedo meter una de las propiedades a cada uno
+    asi cambio segun el eje */
+
+}

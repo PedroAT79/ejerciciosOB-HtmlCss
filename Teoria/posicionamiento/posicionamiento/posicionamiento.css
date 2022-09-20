@@ -1,0 +1,60 @@
+div{
+    border: 1px solid gray;
+    padding: 5px;
+    margin:5px;
+
+}
+
+.relative{
+
+    position:relative;
+    left: 80px; /* se posiciona en relacion al posicionamiento original*/
+    margin-left: 10px;
+
+}
+
+.fixed{
+    position: fixed;/*los margenes del elemento no colapsan con otros margenes, ademas
+    siempre se va a mantener fijo en relacion a la pantalla donde yo le haya indicado*/
+    bottom:0px;
+
+}
+
+.absolute{
+    position:absolute;
+    top:0px;
+    background-color: green;
+}
+/*seria igual que el fix pero en relacion a su elemento padre relativo, se especifica con
+el top, right, bottom y left*/
+
+/*Para mover un div con respecto a otro, lo normal es incluir dentro de un div de clase relativa
+un div de clase absoluta, xq este ultimo se posicionara con respecto al padre*/
+
+.relative1{
+    position:relative;
+    width:400px;
+    height: 300px;
+    left:100px;
+    background-color: blue;
+   
+
+}
+
+.absolute1{
+    position:absolute;
+   
+    background-color: green;
+    right:0px;
+    bottom:30px;/* A 30px del padre relative*/
+}
+/*z-index: suporposiciona*/
+
+.sticky1{
+    position:sticky;
+   
+    background-color: brown;
+    color: white;
+    top:0px;
+    z-index: 2;
+}

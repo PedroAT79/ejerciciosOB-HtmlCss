@@ -1,0 +1,35 @@
+/*https://codepen.io/enxaneta/full/adLPwv*/
+.flex{
+   background-color: yellow;
+   height: 500px;
+   display:flex; /*con esto me lo posiciona todo dentro del div, contiene todo dentro del mismo
+   de una manera ordenada, si no tuviera el flex pues se saldrian porque los pondria en diferentes columnas*/
+   justify-content: space-around; /*posiciona los contenedores en la horizontal segun donde le indique*/
+   /*end (al final), start (por defecto al inicio), space-between (reparte el espacio sobrante)...*/ 
+   /*ademas los contenedores se van redimensionando dependiente del tamaño de la pantalla*/
+   flex-wrap: wrap;/*por defecto es no-wrap, se redimensionan en funcion del tamaño de la pantalla, 
+   en el caso que esta propiedad sea wrap me lo posiciona en otra linea*/
+   align-items:center; /*me lo posiciona en el eje vertical, a diferencia que el justify content*/ 
+   flex-direction: column; /*Lo que hace es cambiar cual es el eje principal, en este caso el flex por
+   defecto es el horizontal, pero al ponerle el column lo cambio al vertical*/
+}
+
+.contenido1{
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border: 1px solid blue;
+}
+.contenido2{
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido3{
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border: 1px solid blue;
+}
