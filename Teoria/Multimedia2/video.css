@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0; /*quito los padding y los margin por defecto que nos trae el stylesheet*/
+}
+
+.video{
+    width: 100vw;/*video del 100% de la pantalla*/
+    height: 100vh;
+    object-fit: cover;/*asi no se deforma el video siempre rellena
+    el tamaño pero sin deformarse*/
+    position:fixed;
+}
+
+.header{
+    color:white;
+    position:relative; /*Asi hago que el titulo aparezca*/
+    text-align: center;
+    display:flex;
+    flex-direction: column; /*Para conseguir que el boton se posicione
+    en forma de columna en vez de fila por el flex*/
+    gap:10px;/* espacio entre los elementos.*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/*asi le digo que el contenedor del titulo ocupe
+    todo el alto de la pantalla consiguiendo que se centre en altura
+    gracias tb a que he alineado al centro con align-center*/
+}
