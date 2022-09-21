@@ -1,0 +1,56 @@
+.p-contenedor{
+    color: green;
+}
+
+.contenedor p{
+    color:green;
+}
+
+.contenedor #boton-contenedor{ /*anido, cambio el color del id con boton-contenedor que esta
+     dentro del div con clase contenedor, va desde afuera a dentro.*/
+    background-color: yellow;
+
+}
+
+/*Pesudoclases*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hover{
+    width: 300px;
+    height: 100px;
+    background-color:bisque;
+}
+
+.hover:hover{
+    background-color: aquamarine; /*cambia de color esta clase cuando paso por encima el puntero*/
+}
+
+.listado{
+    background-color: blueviolet;
+}
+
+.listado p:first-child{
+    background-color: azure;
+} /*afecta al primer elemento del tipo p dentro de la clase listado*/
+
+a:link{ /*Enlaces que no se han visitado*/
+    color: brown;
+}
+
+a:visited{/*Enalce que se ha visitado*/
+    color:chartreuse;
+    
+}
+
+a:hover{ /*cuando paso por encima del enlace*/
+    background-color:black;
+}
+
+a:active{ /*cuando clicas encima cambia*/
+    color:beige;
+}
+
+
