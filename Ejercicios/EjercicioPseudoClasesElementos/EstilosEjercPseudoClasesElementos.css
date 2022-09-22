@@ -1,0 +1,55 @@
+
+
+
+.boton{
+    position:relative;
+    width: 100px;
+    height:50px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+.boton::before{
+    content: 'Pasa por encima';
+    position: absolute;
+    top:50%; /*posicionar el texto dentro del boton*/
+    left:50%; /*posicionar el texto dentro del boton*/
+    transform: translate(-50%, -50%);/*posicionar el texto dentro del boton*/
+    font-size: smaller;
+
+}
+
+.boton::after{
+    content:'¡Hecho!';
+    position: absolute;
+    opacity: 0;
+    top:50%; /*posicionar el texto dentro del boton*/
+    left:50%;/*posicionar el texto dentro del boton*/
+    transform: translate(-50%, -50%);/*posicionar el texto dentro del boton*/
+    font-size: smaller;
+}
+
+.boton:hover::before{
+    opacity: 0;
+}
+
+.boton:hover::after{
+    opacity: 1;
+   
+}
+
+.boton:hover{
+    background-color: green;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+

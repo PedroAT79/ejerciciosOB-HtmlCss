@@ -1,0 +1,49 @@
+div{
+    background-color: blue;
+}
+
+.contenedor{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+}
+
+span.frase{
+    font-style: italic;
+
+}
+
+span.frase::before{
+    content: '<<';
+    font-size: xx-small;
+}
+
+span.frase::after{
+    content: '>>';
+    font-size: xx-small;
+}
+
+.libro{
+    background-color: bisque;
+    padding: 15px;
+    font-family: Arial;
+}
+
+.libro p::first-letter{ /* Pseudoelemento que solo afecta a la primera letra del parrafo dentro de la clase libro*/ 
+    font-size: xx-large;
+}
+
+.libro p::first-line{ /*Para cambiar la primera linena*/
+    color: aqua;
+}
+
+.libro p::selection{ /*cuando selecciono algo me cambia lo que esta seleccionado*/
+    color:aliceblue;
+    background-color: chocolate;
+}
+
+.listado li::marker{ /* marca en rojo los puntos de cada item de la lista*/
+
+    color:red;
+
+}

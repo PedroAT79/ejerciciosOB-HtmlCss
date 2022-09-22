@@ -1,0 +1,25 @@
+h1{
+    color: blue;
+}
+
+h1{
+    color:green;
+}
+
+p{
+    color:red;
+}
+
+/*A igualdad de condiciones se aplicaria el ultimo estilo para las etiqueta del mismo elemento, si se trata de una class al tener mayor especificidad que una etiqueta mandaria y se
+reflejaria, a mas especifico mas preferencia en el estilo un (0,1,0) iria por delante a un (0,0,1), si se trata de un id, este tiene mas especificidad
+que la clase*/
+
+/*id (1,0,0)
+class (0,1,0)
+etiqueta(0,0,1)
+ si especifico por ejemplo h1 #h1-id.h1-clase (1,1,1)*/
+ /*los estilos que se definen sobre la misma linea en el html tienen mas especificidad*/
+ /*la etqueta important esta por envcima de todos los demas
+ h1{
+    color:blue !important} -- evitar este tipo de operadores especiales, xq hace q el codigo bno sea mantenible.
+ */
