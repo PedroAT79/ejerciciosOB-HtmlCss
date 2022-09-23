@@ -174,5 +174,10 @@ label input:hover{
 }
 .submit-btn:hover{
 
-opacity: 75%;}
+opacity: 75%;
+}
+
+.section-inputs input{
+    color: #eb82aa;
+}
 
