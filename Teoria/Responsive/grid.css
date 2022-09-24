@@ -1,0 +1,35 @@
+.contenedor{
+    display:grid;
+    /*grid-template-columns: auto auto auto; /*3 columnas de tamaño automatico*/
+    grid-template-columns: repeat(3, auto); /*lo mismo que lo de arriba, 3 columnas con tamaño automatico*/
+    /*row-gap:1rem;
+    column-gap: 0.5rem;*/
+    /*grid-template-columns: 20px 3rem 25vw; tamaño personalizado*/
+    /*grid-template-columns: 1fr 3fr 1fr; tamaño personalizado en fracciones de pantalla*/
+    grid-template-rows: 2fr 1fr 1fr; /*el temaño de la fila*/
+    gap:0.5rem;
+    grid-template-areas: 'head head head' 'main main aside' 'footer footer footer';/*aqui le estoy diciendo que los 3 primero elementos
+    forman parter del head, y asi con el resto*/
+}
+
+.item{
+    background-color: yellow;
+    padding: 0.25rem;
+    border:1px solid green;
+    font-size: 2rem;
+}
+
+.item1{
+
+    /*grid-area:head; /*esto me relaciona este elemento con el grid-template area el cual dice que las 3 primeras elementos ocupan el head*/
+    /*grid-column:2 /span 2 /*el elemento va desde la columna 2 hasta ocupar otros dos espacios*/
+}
+
+.item9{
+    /*grid-area:footer;*/
+    grid-area: 2/1/4/3; /*el elemento iria desde la fila 2 y columna 1 hasta la fila 4 y columna 3*/
+}
+
+.item5{
+    grid-area:main;
+}
