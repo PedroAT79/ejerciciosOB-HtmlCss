@@ -1,0 +1,23 @@
+
+.row{
+    margin:0.25rem;
+}
+.col{
+    background-color: red;
+}
+
+.col-sm{
+    background-color: aquamarine;
+}
+
+.col-md{
+    background-color: cadetblue;
+}
+
+.col-lg{
+    background-color: blueviolet;
+}
+
+.col-xl{
+    background-color: coral;
+}
