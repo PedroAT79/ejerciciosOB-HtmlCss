@@ -1,0 +1,19 @@
+:root{
+    --color-principal:rgb(235, 71, 17);
+    --ancho-principal: 350px;
+    /*aqui meto las variables para despues usarlas cdo yo lo necesite*/
+}
+
+.titulo{
+    color:var(--color-principal);
+}
+
+.footer{
+    color:var(--color-principal);
+}
+
+.contenedor{
+    background-color: aqua;
+    padding: 1rem;
+    max-width: var(--ancho-principal);
+}
