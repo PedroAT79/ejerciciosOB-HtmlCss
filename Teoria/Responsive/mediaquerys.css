@@ -1,0 +1,61 @@
+h1{
+    color:red;
+    font-size: 4rem;
+}
+
+p{
+    color:black;
+    font-size: 2rem;
+}
+
+@media print and (max-width: 576px) {/*con esto estoy controlando la impresora, cuando quiera imprimir
+    le he puesto que el titulo me lo imprima en azul, al ponerle el max-width (anchura maxima) le estoy diciendo
+    que si se va a imprimir y el tamaño del impreso va a ser menor de 576 quiero que el estilo del h1 cambie a azul*/
+    h1{
+        color:blue;
+    } 
+
+}
+
+
+/*@media screen and (max-width: 576px) {/*lo mismo para la pantalla screen
+    h1{
+        color:blue;
+    } 
+
+}*/
+
+@media (min-width: 576px){
+    h1{
+        color:green; /*es lo mismo que lo de arriba pero tanto para screen como para print*/
+    }
+}
+
+@media (min-width:995px){
+    h1{
+        color:blue;
+    }
+}
+
+@media (min-height: 300px){
+    p{
+        color:cyan; /*si cambia el alto del parrafo*/
+
+    }
+
+}
+
+/*@media (orientation: landscape){
+    p{
+        color: brown;
+    } /*que cambie cuando el movil esta en horizontal
+}*/
+
+@media(orientation:landscape) and (min-height:400px){ /*mas de una condicion: el movil en horizontal y una altura minima de 400px me cambia el
+    texto del parrafo*/
+
+    p{
+        color: yellow;
+    }
+}
+
